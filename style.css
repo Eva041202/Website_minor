@@ -1,3 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body {
     background: #f4eddc;
+    color: #382215;
+}
+
+header {
+    background-color: #8b4c9e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*dit aan chatgpt gevraagd*/
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
 }
