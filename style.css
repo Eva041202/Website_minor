@@ -17,6 +17,46 @@ header {
     text-align: center;
 }
 
+nav {
+    position: absolute; /*Met Kelly haar hulp*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    translate: 0% -100%;
+    transition: translate .3s;
+
+    background-color: #e891c8;
+}
+
+header button {
+    position: relative;
+    width: 50px;
+    z-index:150;
+
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul {
+    top: 0;
+    left: 0;
+}
+
+nav.open { /*Hiermee schuift het menu in beeld*/
+    translate: 0% 0%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /*dit aan chatgpt gevraagd*/
@@ -37,8 +77,8 @@ header {
 }
 
 .card:hover { /*gevraagd aan chatgpt*/
-    transform: scale(1.05); /*Klein beetje inzoomen*/
     box-shadow: 0 0 20px #8b4c9e;
+    /*Had eerste de transition en tranform hier gezet, maar daardoor ging het hele kaartje naar voren, inplaats alleen de foto*/
 }
 
 .card img {
@@ -46,7 +86,11 @@ header {
     height: 160px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.card:hover img {
     transition: transform 0.3s ease;
+    transform: scale(1.05); /*Klein beetje inzoomen*/
 }
 
 .card:nth-child(1) {

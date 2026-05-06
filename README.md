@@ -15,3 +15,7 @@ Code uit vorige projecten kunnen toepassen.
 Voor ease wel chatgpt
 Rem grootte gok ik tot het er goed uit ziet
 nth-of-type of nth-of-child chatgpt
+
+https://codepen.io/shooft/pen/GRbxLYV
+
+https://heroicons.com/
