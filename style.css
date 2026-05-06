@@ -19,7 +19,7 @@ header {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*dit aan chatgpt gevraagd*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /*dit aan chatgpt gevraagd*/
     gap: 20px;
     padding: 30px;
 }
@@ -29,8 +29,57 @@ header {
     background-color: white;
     border-radius: 10px;
     display: block;
+    overflow: hidden; /*Zo blijft de afbeelding binnen de kaart*/
 }
 
 .card-content {
     padding: 15px;
+}
+
+.card:hover { /*gevraagd aan chatgpt*/
+    transform: scale(1.05); /*Klein beetje inzoomen*/
+    box-shadow: 0 0 20px #8b4c9e;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:nth-child(1) {
+    background-color: #8b4c9e;
+    color: white;
+}
+
+.card:nth-child(2) {
+    background-color: #e891c8;
+    color: #2d1b3d;
+}
+
+.card:nth-child(3) {
+    background-color: #a65bb5;
+    color: white;
+}
+
+.card:nth-child(4) {
+    background-color: #ffc4e8;
+    color: #5d2d6e;
+}
+
+.card:nth-child(5) {
+    background-color: #8b4c9e;
+    color: white;
+}
+
+.card:nth-child(6) {
+    background-color: #e891c8;
+    color: #2d1b3d;
+}
+
+.card:nth-child(7) {
+    background-color: #a65bb5;
+    color: white;
 }

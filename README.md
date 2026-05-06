@@ -10,3 +10,8 @@ Van de website een kleuren palet gemaakt
 Star Stable(2011). Geraadpleegd op 04-05-2026 van  <a href="https://www.starstable.com/nl">
 
 Figma(2012). Geraadpleegd op 04-05-2026 van <a href="https://www.figma.com/">
+
+Code uit vorige projecten kunnen toepassen.
+Voor ease wel chatgpt
+Rem grootte gok ik tot het er goed uit ziet
+nth-of-type of nth-of-child chatgpt
