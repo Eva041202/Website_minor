@@ -64,9 +64,31 @@ nav a {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /*dit aan chatgpt gevraagd*/
     gap: 20px;
     padding: 30px;
+
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 580px) {
+    .grid {
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 300px);
+        justify-content: center;
+    }
 }
 
 .card {
@@ -91,10 +113,10 @@ nav a {
     height: 160px;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .card:hover img {
-    transition: transform 0.3s ease;
     transform: scale(1.05); /*Klein beetje inzoomen*/
 }
 
