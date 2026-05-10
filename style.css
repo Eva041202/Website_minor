@@ -14,18 +14,24 @@ header {
     background-color: #8b4c9e;
     color: white;
     padding: 20px;
-    text-align: center;
+    
+    display: flex;
+    align-items: center;
+
+    position: relative;
 }
 
 nav {
-    position: absolute; /*Met Kelly haar hulp*/
+    position: fixed; /*Met Kelly haar hulp*/
+    /* inset: 0; */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
+    align-items: center;
 
     translate: 0% -100%;
     transition: translate .3s;
@@ -34,14 +40,20 @@ nav {
 }
 
 header button {
-    position: relative;
+    position: absolute;
+    left: 20px;
     width: 50px;
-    z-index:150;
+    z-index: 200;
 
     color: white;
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
 }
 
 nav ul {
