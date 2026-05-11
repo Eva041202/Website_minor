@@ -166,3 +166,32 @@ nav a {
     background-color: #a65bb5;
     color: white;
 }
+
+.article-page {
+    display: flex;
+    justify-content: center;
+}
+
+.article {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+}
+
+.article h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.article p {
+    margin-bottom: 20px;
+}
+
+.article img {
+    /* width: 100%; */
+    margin: 30px;
+}
+
+.article q {
+    font-style: italic;
+}

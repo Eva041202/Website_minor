@@ -10,25 +10,188 @@
 
     <header>
         <h1>Peter Paul Koch</h1>
+
+        <!--MARK: BRON: https://heroicons.com/-->
+        <button aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+        </button>
+
+        <!--MARK: BRON: CodePen van Sanne: https://codepen.io/shooft/pen/GRbxLYV
+        Extra hulp van Kelly-->
+        <nav>
+            <ul class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wat-ik-heb-geleerd.html">Wat ik heb geleerd</a></li>
+                <li><a href="weekly-geek.html">Weekly Geek</a></li>
+                <li><a href="weekly-nerd.html">Weekly Nerd</a></li>
+                <li><a href="projecten.html">Projecten</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <p class="">Aantekeningen tijdens de lezing:</p>
-    <p>Internet = alles
-        Browser werkt op het internet maar niet andersom </p>
+    <main class="article-page">
+        <article class="article">
+            <h2>Aantekeningen tijdens de lezing:</h2>
 
-    <p>Browser haalt data op (html, css, javascript) </p>
+            <p>Internet = alles <br />
+                Browser werkt op het internet maar niet andersom</p>
+                
+            <p>Browser haalt data op (HTML, CSS, JavaScript) </p>
 
-    <p>DOM = document object model 
-    Soort kopie van je html maar dan geschikt voor javascript </p>
+            <p>DOM = document object model <br />
+                Soort kopie van je HTML maar dan geschikt voor JavaScript </p>
 
-    <p>AOM = accessibility object model
-        Bedoeld voor accesive no... zoals screenreaders </p>
+            <p>AOM = accessibility object model <br />
+                Bedoeld voor accesive no... zoals screenreaders </p>
 
-    <p>Interface = url invullen, return kunnen doen, tussen browsers kunnen schakelen, backbuttons, etc </p>
+            <p>Interface = url invullen, return kunnen doen, tussen browsers kunnen schakelen, backbuttons, etc </p>
 
-    <p>Browser bestaat uit: HTML, CSS, DOM, AOM, Interface, JavaScript</p>
+            <p>Browser bestaat uit: HTML, CSS, DOM, AOM, Interface, JavaScript</p>
 
-    <img src="media/weekly_nerd/lezing 2.png" alt="lezing 2" />
+            <img src="media/weekly_nerd/lezing 2.png" alt="lezing 2" />
+
+            <p>Parser is een stukje programma dat een string heeft zoals HTML en gaat uitstukken wat er in zit.</p>
+
+            <p>Als je de layout veranderd, JavaScript van oh nee toch 3 kolom, maar dit is een zware operatie. Kost veel tijd en resources. <br />
+                Kijk uit met veranderingen van de layout (boodschap = hou het lekker simple)</p>
+
+            <p>Rendering engine is verantwoordelijk voor HTML en CSS parsing en rendering, constructive van de DOM en AOM trees. <br />
+                Dus NIET interface of JavaScript engine</p>
+            
+            <p>Rendering engine van browser = centrale deel van browser. <br />
+            Is alles behalve JavaScript en interface. <br />
+            Kan op verschillende broswers worden gebruikt. <br />
+            Meest gebruike rendering engine is Blink (a.k.a Chromium). <br />
+            Chromium wordt gebruikt door Chrome, Edge, Arc, Opera, Vivaldi en meer (Firefox niet). <br />
+            Als dus iets in CSS op chrome werkt, werkt het ook voor Edge, Opera en de rest. <br />
+            Deze browsers gebruiken dus een rendering engine die al bestaat (is makkelijker ofzo).</p>
+
+            <p>Core vs DOM:</p>
+            <p>Core wat JavaScript een programmeertaal maakt. <br />
+            DOM: de manier waarop JavaScript delen van HTML-pagina's kan aanspreken en wijzigen.</p>
+
+            <p>Rendering blocking: <br>
+            CSS <br />
+            JavaScript, tenzij async of defer</p>
+
+            <p>document.right betekent schrijf dit in het HTML-document. Dit is wel heel heel heel oud JavaScript.</p>
+
+            <p>Het script wordt uitgeschreven. Dit kan lang duren en dan zegt de browser, die zien we niet we gaan door. <br />
+            Je zet je JavaScript later, pas als de HTML helemaal gelezen is.</p>
+
+            <p>Meest noodzakelijke info voor layouts is CSS </p>
+
+            <p>Als de layout eerst HTML ophaalt zie je eerst of niks of ongestijlde HTML. Daarom eerst CSS lezen. Dat is handig. <br />
+            Dan komt de HTML en is deze meteen gestijlt omdat de CSS al gelezen is </p>
+
+            <p>defer vs async:</p> <!--BRON: dit gevraag aan chatgpt. Ik dacht eerst om de <script src> in een <q> te zetten, maar dat werkte niet.
+            Chatgpt liet mij deze manier zien en zo krijg ik de code als tekst te zien op het scherm-->
+            <p>Do it now: <code>&lt;script src&gt;</code></p>
+            <p>Do it later: <code>&lt;script defer src&gt;</code></p>
+            <p>I don't care when you do it, just not now: <code>&lt;script asyns src&gt;</code></p>
+
+            <p>Met grotere JavaScripten is handig om een van de laatste 2 te gebruiken.</p>
+
+            <p>Backward compatibility:</p>
+            <p>Alles wat een browser ooit heeft ondersteund moet de browser voor altijd blijven ondersteunen. <br />
+            [form object].elements <br />
+            Voor de huidige DOM bestond (prestory web) hadden we elements. Het bestaat in alle browsers. <br />
+            <code>&lt;body bgcolor="abdaca"&gt;</code> <br />
+            Context box model <br />
+            <code>&lt;frameset&gt;</code> <br />
+            <code>&lt;iframe&gt;</code> is afstammeling van <code>&lt;frame&gt;</code> en <code>&lt;frameset&gt;</code>. <br />
+            <code>&lt;iframe&gt;</code> bestaat wel nog. <br />
+            Sommige code wordt dus niet meer gebruikt, maar browsers kunnen het wel blijven lezen. Zo kunnen oude websites nog worden gebruikt.</p>
+
+            <p>Met <code>&lt;blink&gt;</code> knipperde de tekst in HTML Deze is wel echt verwijderd en kunnen browsers niet meer lezen.</p>
+            
+            <q>Browsers are the most hostile development platforms in the world</q><p>- Douglas Crockford</p>
+            <p>Douglas is de op een na belangrijkste man in de geschiedenis van CSS. <br />
+            Hij heft JSON uitgevonden</p>
+
+            <p>Korte geschiedenis: <br />
+            De allereerste webbrowser was www. <br />
+            www browser (1990). <br />
+            Brothers Lee hebben dit uitgevonden. <br />
+            De allereerste browser is gebouwd te Cern door Tim Berners-Lee en consorten. <br />
+            Het is herbouwd in 2019. Zowel de browser als HTML. Je kan er html in schrijven. <br />
+            Dus de 1e browser is nagebouwd en geschikt voor moderne browsers.</p>
+
+            <p>ip = adressenbestand van het internet <br />
+            Een ip gaat automatisch om problemen heen. ALs in amerika ergens het eruit knalt, denkt het ip-adres "oh, het lukt even niet". Dan gaan we maar via deze weg. <br />
+            En miss wordt het drukker en trager maar het zoekt een weg en werkt.</p>
+        
+            <p>Browser die Peter Paul Koch benoemde:</p>
+            <p>Mosaic (1993) <br />
+            Dit is de eerste browser, zoals wij een browser herkennen. <br />
+            Zij hebben de tag ontworpen om plaatjes op je browser te krijgen. Zo werden ze bekend bij de gebruikers.</p>
+
+            <p>Netscape (1994) <br />
+            Mosaic bouwde een tweede browser en dat was Netscape. <br />
+            Voor het gebruik van Netscape moest je betalen. Je kreeg dan wat thuis gestuurd en dat kon je installeren op je computer. <br />
+            Dit was even een succes tot de komst van Internet Explorer.</p>
+
+            <p>Internet Explorer (1995) <br />
+            Deze browser kon je zomaar downloaden en was gratis.</p>
+
+            <p>Opera (1995) <br />
+            Dit is een wat kleinere browser die op kwam. <br />
+            Toen der tijd was dit een goede browser. <br />
+            Één van hun directeuren was ook de uitvinder van CSS. <br />
+            Met Opera wilde hij laten zien hoe CSS echt werkte.</p>
+
+            <p>Internet Explorer 5 for Mac (IE 5 Mac) (2000) <br />
+            Apple werd hier ondersteund door Microsoft, maar was nog geen goede browser voor de mac. <br />
+            Deze browser ondersteunde CSS ook erg goed.</p>
+
+            <p>Konqueror (2000) <br />
+            Dit was eerst een hobby-project. Dat bleek een behoorlijk goede browser te zijn. <br />
+            Het ging steeds beter met Apple en ze hadden ondertussen Microsoft uitgekocht. <br  />
+            Zij hadden een rendering engine genomen die al bestond en deze verbeterd.</p>
+
+            <p>Safari (2003) <br />
+            Safari heeft weer de rendering engine gepakt die Konqueror verbeterd had.</p>
+
+            <p>Firefox (2004) <br />
+            Heeft rendering engine Gecko. <br />
+            Gecko komt weer van Netscape.</p>
+
+            <p>Safari iOS (2007) <br />
+            Dit was een andere browser dan die van de Mac. <br />
+            Dit is een mobielere browser met touch. <br />
+            Nokia en Blackberry hadden al een browser voordat deze Safari uitkwam.
+        
+            De vernieuwde browser van Blackberry pakte de rendering engine van Safari iOS. <br />
+            Safari iOS is zelfs gebruikt door Google Chrome.</p>
+
+            <p>Chrome (2008) <br />
+            Zoals eerder benoemd, nam Chrome de rendering engine van Safari iOS. <br />
+            Chrome werd op een gegeven moment gek van Apple, omdat Apple niks nieuws wilde in Webkit. <br />
+            Zo zijn ze zelf verder gegaan en dat werd Blink.
+
+            Gecko, de rendering engine van Firefox, gebruikte Chrome niet. <br />
+            Ze zijn voor die van Konqueror gegaan, want die kwam lichter op gang.</p>
+
+            <p>Flow (2020) <br />
+            Deze browser is gemaakt door een engels bedrijf die browsers maaktten voor tv's. <br />
+            Ze wilden hun eigen website browser maken. <br />
+            Deze browser pakt CSS niet altijd goed.</p>
+
+            <p>Ladybird (2024) <br />
+            Dit is gemaakt door een Zweedse man. Hij heeft bij Apple gewerkt. <br />
+            Hij had een hobby-project nodig om van zijn drugs verslaving af te komen. Dat werd deze browser.</p>
+            
+            <p>Igalia <br />
+            Dit is een spaans opensource bedrijf in handen van de werknemers zelf. <br />
+            Ze maken delen van rendering engines. <br />
+            Grids die in Chromium zitten zijn gemaakt door Igalia. <br />
+            Zelf maken ze geen browsers, maar ze weten hier wel heel veel van af.</p>
+        </article>
+    </main>
+        
+
+
+        <script src="script.js"></script>
     
 </body>
 </html>
