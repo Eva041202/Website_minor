@@ -10,24 +10,125 @@
 
     <header>
         <h1>Kilian Valkhof</h1>
+
+        <!--MARK: BRON: https://heroicons.com/-->
+        <button aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+        </button>
+
+        <!--MARK: BRON: CodePen van Sanne: https://codepen.io/shooft/pen/GRbxLYV
+        Extra hulp van Kelly-->
+        <nav>
+            <ul class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wat-ik-heb-geleerd.html">Wat ik heb geleerd</a></li>
+                <li><a href="weekly-geek.html">Weekly Geek</a></li>
+                <li><a href="weekly-nerd.html">Weekly Nerd</a></li>
+                <li><a href="projecten.html">Projecten</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <p class="">Aantekeningen tijdens de lezing:</p>
-    <p>Moving features van JS naar HTML en CSS
-        Heeft Polypane gemaakt</p>
+    <main class="article-page">
+        <section class="person">
+            <img src="media/weekly_nerd/kilian.jpg" alt="kilian valkhof">
 
-    <p>HTML heeft attribute
-        JSX = dialect van HTML </p>
+            <div class="lecture-info">
+                <p>Datum: 04-02-2026</p> <br />
 
-    <p>The rule of least power = hoe je met technologie ....
-        --> choose the least powerful language suitable for a given purpose </p>
+                <p>Locatie: KSH 00A11</p>
+            </div>
+        </section>
 
-    <p>Minder Javascript = stabielere browser
-        Developers zoeken afgelopen 5/6 jaar naar gaten in HTML en CSS, waar anderen sneller JavaScript voor pakken, zodat er minder snel Javascript wordt gebruikt </p>
+        <article class="article">
+            <h2>Aantekeningen tijdens de lezing:</h2>
 
-    <p>Custom switches = geen checkbox, maar slider
+            <p>Moving features van JS naar HTML en CSS <br />
+            Hij heeft Polypane gemaakt</p>
+
+            <details>
+                <summary>Lees meer...</summary>
+
+                <p>HTML heeft attribute <br />
+                    JSX = dialect van HTML</p>
+
+                <p>The rule of least power = hoe je met technologie .... <br />
+                    --> Choose the least powerful language suitable for a given purpose.</p>
+
+                <p>Minder Javascript = stabielere browser <br />
+                    Developers zoeken afgelopen 5/6 jaar naar gaten in HTML en CSS, waar anderen sneller JavaScript voor pakken, zodat er minder snel Javascript wordt gebruikt.</p>
+
+                <p>Custom switches = geen checkbox, maar slider. <br />
+                    <code>&lt;label&gt;</code> <br />
+                    <code>&lt;input type="checkbox"&gt;</code> <br />
+                    My awesome feature <br />
+                    <code>&lt;label&gt;</code> <br />
+                --> <input type="checkbox"> My awesome feature</p>
+
+                <p>input { <br />
+                    appearance: none; <br />
+                    position: relative; <br />
+                    display: inline-block; <br />
+                    background: lightgrey; <br />
+                    height: 1.65rem; <br />
+                    width: 2.75rem; <br />
+                    vertical-align: middle; <br />
+                    border-radius: 2rem; <br />
+                    box-shadow: 6px 10px 3px #0003 inset; <br />
+                    transition: 6.25s linear background; <br />
+                    } <br />
+                    input:before</p>
+
+                <p>Idee gekregen om switch te maken op m'n website voor de 2 thema's.</p>
+
+                <p><code>&lt;input&gt;</code> <br />
+                    Type=”checkbox” <br />
+                    <code>&lt;/switch&gt;</code> <br />
+                    (Ging te snel weg)</p>
+
+                <p>CSS: <br />
+                    :checked { <br />
+                    background: green; <br />
+                    } <br />
+                    :checked::before { <br />
+                    transform: translate</p>
+
+                <p>HTML {
+                    scroll-behavior: smooth;
+                    }
+                    --> scrollen met animatie(?)
+                    --> het scrollt naar waar jij op geklikt hebt</p>
+
+                <p>Gaat me nu boven de pet. Snap er niks meer van.</p>
+            </details>            
+        </article>
+
+
+        <article class="article">
+            <h2>Over de spreker:</h2>
+
+            <p>...</p>
+
+            <details>
+                <summary>Lees meer...</summary>
+            </details>
+        </article>
+
         
-    </p>
+        <article class="article">
+            <h2>Wat neem ik mee:</h2>
+
+            <p>...</p>
+
+            <details>
+                <summary>Lees meer...</summary>
+            </details>
+        </article>
+    </main>
+
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -10,7 +10,194 @@
 
     <header>
         <h1>Robbert Boersma & Yolijn van der Kolk</h1>
+
+        <!--MARK: BRON: https://heroicons.com/-->
+        <button aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+        </button>
+
+        <!--MARK: BRON: CodePen van Sanne: https://codepen.io/shooft/pen/GRbxLYV
+        Extra hulp van Kelly-->
+        <nav>
+            <ul class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wat-ik-heb-geleerd.html">Wat ik heb geleerd</a></li>
+                <li><a href="weekly-geek.html">Weekly Geek</a></li>
+                <li><a href="weekly-nerd.html">Weekly Nerd</a></li>
+                <li><a href="projecten.html">Projecten</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <main class="article-page">
+        <section class="person">
+            <img src="media/weekly_nerd/robbert&yolijn.png" alt="robbert en yolijn">
+
+            <div class="lecture-info">
+                <p>Datum: 12-03-2026</p> <br />
+
+                <p>Locatie: KSH 00A11</p>
+            </div>
+        </section>
+
+        <article class="article">
+            <h2>Aantekeningen tijdens de lezing:</h2>
+
+            <p>Robbert en Yolijn werken o.a. aan nl design system.</p>
+
+            <p>NL Design system maakt niet alleen formulieren maar test deze ook met mensen/gebruikers.</p>
+
+            <details>
+                <summary>Lees meer...</summary>
+
+                <p>Introductietekst: <br />
+                    - Informatie vragen die nodig is. <br />
+                    - Gebruiker kan voor inzending de ingevoerde waardes controleren, wijzigen of ongedaan maken. <br />
+                    - Na "volgende" of "verzend" verschijnt een samenvatting. <br />
+                    - Na verzenden verschijnt een duidelijke bevestiging </p>
+
+                <p>Op hun formulier lijnen ze de dingen links uit, zodat het netjes onder elkaar staat en de gebruiker minder snel dingen over het hoofd ziet.</p>
+
+                <p>De teksten zijn zo ge-designed dat een screenreader dit goed kan lezen (ook de foutmeldingen).</p>
+
+                <p>Ervoor zorgen dat de gebruiker na het invullen een overzicht krijgt met wat er is ingevuld en voor zichzelf nog kan controleren en/of aanpassen.</p>
+
+                <p>Fijn als je het kan maken dat de gebruiker later altijd weer verder kan en niet alles refreshed.</p>
+
+                <p>Na versturen venster positief met is gelukt en vervolgens korte uitleg wat er daarna gaat gebeuren. Fijn voor de gebruiker.</p>
+
+                <p>Inhoud van een formulier: <br />
+                    - Alleen informatie vragen die nodig is <br />
+                    - Verplichte velden goed aangeven <br />
+                    - Uitleggen waarom je specifieke informatie nodig hebt <br />
+                    - Gebruiker dezelfde informatie niet twee keer vragen <br />
+                    - Geen jagon of gekke afkorting(en) gebruiken</p>
+
+                <p>Design van de componenten: <br />
+                    - Check het kleurcontrast van componenten. <br />
+                        De rand moet voldoende contrast hebben met de achtergrondkleur. <br />
+                    - Check het kleurcontrast van subtielere tekst. <br />
+                        De tekst van de beschrijving en van de placeholder moet voldoende contrast hebben met de achtergrondkleur. <br />
+                    - Zijn de componenten groot genoeg? <br />
+                        44x44px is gebruiksvriendelijk.</p>
+
+                <p>Design van het formulier: <br />
+                    - Staan er buttons aan het eind van de regel, zoals "volgende"? <br />
+                    Plaats de buttons aan het begin van de regel, waar iedereen ze kan vinden. <br />
+                    - De voortgang wordt getoond boven het formulier in tekst, bijvoorbeeld "stap 2 van 4". <br />
+                    - De navigatie (volgende, vorige, annuleren) is consistent in elke stap. <br />
+                    - Het is duidelijk in welke stap het formulier daadwerkelijk wordt verzonden. <br />
+                    - Elk invoerveld heeft een zichbaar label dat boven het invoerveld staat. <br />
+                    Alleen bij de zoekfunctie is de label eventueel vervangen door alleen een placeholder. <br />
+                    - Er staat "verplicht" of "niet verplicht" in tekst, alleen niet met een sterretje (asterisk*) of kleur. </p>
+
+                <p>Flow van het formulier: <br />
+                    - Staan de formuliervelden in logische volgorde? <br />
+                    Zijn er meerdere contactmogelijkheden beschikbaar om hulp te krijgen? Zorg voor meerdere manieren zodat het voor iedereen mmogelijk is contact op te nemen. Bijvoorbeeld: e-mail, chat en telefoon. <br />
+                    - Wordt hulp op meerdere plekken aangeboden? Goede plekken zijn: in de introductietekst, bovenaan een formulier, in de Page Footer, op  de controlepagina en op de bevestigingspagina. <br />
+                    - De voortgang wordt getoond boven het formulier in de tekst. </p>
+
+                <p>Labels: <br />
+                    - Gebruik een <code>&lt;label for="input"-id"&gt;</code> voor het formulierveld, en zorg dat alles een gekoppeld label heeft. <br />
+                    - Andere code voor een label, zoasd aria-label="" of title="" moeten in elk geval de zichtbare labeltekst bevatten, anders werkt het niet met spraakbesturing. <br />
+                    - "Voorna(a)m(en)"? Nope! Pas de tekst aan. <br />
+                        Beter: Voornaam (1 of meerdere)</p>
+
+                <p>Makkelijker invullen: <br />
+                    - Als de gebruiker is ingelogd, dan worden de bekende gegevens vooraf ingevuld. <br />
+                    - Knippen en plakken is overal toegestaan. <br />
+                    - Controleer of de browser autocomplete aanbiedt om velden vooraf in te vullen, waar je dat verwacht.</p>
+
+                <p>Tip: autocomplete vakje moet je vrijlaten. <br />
+                    Als jij bijv 10 tekens wil in het invoerveld. Zorg dat dat er genoeg ruimte is voor de 10 tekens + 44x44px extra ruimte.</p>
+
+                <p>Beschrijvingen bij een veld: <br />
+                    - Belangrijke uitleg is altijd zichtbaar. <br />
+                    Essentiële informatie staat in een description of in labeltekst, niet alleen in een placeholder of tooltip. <br />
+                    - Extra teksten bij een formulierveld zijn gekoppeld met aria-describedby op het formulier-element, zoals <code>&lt;input&gt;</code> of <code>&lt;select&gt;</code>: <br />
+                    - Beschrijving, foutmelding <br />
+                    - Feedback zoals: "42 van de 100 tekens" of "je wachtwoord voldoet aan de eisen" <br />
+                    - De beschrijving en foutmeldimg van Checkbox Group en Radio Group zijn gekoppeld aan de <code>&lt;fieldset&gt;</code> met aria-describedby. </p>
+
+                <p>Controleren: <br />
+                    - De laatste stap toont een samenvatting van alle ingevoerde gegegevens. <br />
+                    - Het formulier biedt de mogelijkheid om een inzending te controleren, te wijzigen of ongedaan te maken. <br />
+                    - Voorkom met <code>&lt;bdi translate="no"&gt;</code> dat wat de gebruiker zelf heeft ingevoerd, wordt vertaald. Dit is met name op de controle-pagina en de bevestigingspagina.</p>
+
+                <p>Bevestiging: <br />
+                    - Is er een duidelijke bevestiging? Een goede bevestiging vermeldt welke informatie is verstuurd, of verwijst naar een plek waar dat te vinden is. De bevestiging vermeldt eat de vervolgstappen zijn.</p>
+
+                <p>Validatie: <br />
+                    - De regels voor een invoerveld zijn vooraf duidelijk, bijvoorbeeld: welke tekens, of hoe lang de tekst mag zijn. <br />
+                    - Boven het formulier staat uitleg over hoe verplichte of niet-verplichte velden zijn aangemerkt. Verplichte of niet-verplichte velden zijn consequent aangemerkt in het hele formulier. <br />
+                    - Invoervelden hebben geen onnodig minimum of maximum aantal tekens. <br />
+                    - Foutmeldingen verschijnen op het juiste moment.</p>
+
+                <p>Desing van foutmeldingen: <br />
+                    - Fouteldingen staan bij het betreffende veld... <br />
+                    - ...enbovenaan …….. <br />
+                    -  </p>
+
+                <p>Doorloop het formulier volledig met alleen het toetsenbord (zonder muis). <br />
+                    De volgende dingen moeten goed werken: <br />
+                    - Elk invoerveld, elke button en elke link is bereikbaar met Tab-toets. <br />
+                    - De tabvolgorde is logisch. Meestal is dat: van boven naar beneden, van links naar recht. <br />
+                    - De focusindicator is goed zichtbaar waardoor het altijd udidelijk is waar focus is tijdens het navigeren met de tab-toets. <br />
+                    - Sommige componenten werken met andere toetsen dan Tab. Bijvoobreeld: Radiobuttons zijn bedienbaar…….. </p>
+
+                <p>Screenreader: <br />
+                    - Het label van elk veld wordt voorgelezen als het veld focus krijgt. <br />
+                    - De beschrijving van een veld wordt voorgelezen als het veld focus krijgt. <br />
+                    - Verplichte velden worden als verplicht aangeduid bij het voorlezen. <br />
+                    - Foutmeldingen en feedback onderbreken de gebruiker niet bij het invullen. <br />
+                    - Feedback over invoer (bijvoorbeeld: of "je wachtwoord voldoet aan de eisen") worden automatisch voorgelezen, zonder dat de gebruiker er naartoe hoeft te navigeren.</p>
+
+                <p>Screenreader navigatie: <br />
+                    - De voortgang is hoorbaar voor screenreadergebruikers. "Stap 2 van 4"of vergelijkbaar. <br />
+                    - Na verzenden verschijnt een duidelijke bevestiging dat het formulier succesvol is verzonden. <br />
+                    - Positieve statusberichten na het versturen (zoals "formulier verzonden") worden automatisch voorgelezen.</p>
+
+                <p>Screenreader validatie: <br />
+                    - Foutmeldingen worden voorgelezen. <br />
+                    - Foutmeldingen onderbreken de gebruiker niet bij het invullen. <br />
+                    - Wanneer je meerdere fouten hebt bij het verzenden, dan krijg je 1 bericht met de samenvatting van alle fouten. <br />
+                    - De foutmelding van een veld wordt voorgelezen als het veld focus krijgt. <br />
+                    - Foutmeldingen leggen uit wat er fout is en hoe het opgelost kan worden. Niet alleen "Invoer klopt niet!". </p>
+
+                <p>Vertaalsoftware: <br />
+                    - Vul je formulier in tenzij je vertaalsoftware gebruikt, zoals Google Translate. <br />
+                    Test zowel de happy flow als de unhappy flow. <br />
+                    - Je kunt het formulier invullen, alle informatie van het formulier wordt vertaald. <br />
+                    - Informatie die je zelf hebt ingevoerd wordt niet ook vertaald.</p>
+            </details>            
+        </article>
+
+
+        <article class="article">
+            <h2>Over de spreker:</h2>
+
+            <p>...</p>
+
+            <details>
+                <summary>Lees meer...</summary>
+            </details>
+        </article>
+
+
+        <article class="article">
+            <h2>Wat neem ik mee:</h2>
+
+            <p>...</p>
+
+            <details>
+                <summary>Lees meer...</summary>
+            </details>
+        </article>
+    </main>
+
+
+
+    <script src="script.js"></script>
     
 </body>
 </html>
