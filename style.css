@@ -189,6 +189,16 @@ nav a {
     color: #5d2d6e;
 }
 
+.card:nth-child(9) {
+    background-color: #8b4c9e;
+    color: white;
+}
+
+.card:nth-child(10) {
+    background-color: #e891c8;
+    color: #2d1b3d;
+}
+
 .project {
     display: flex;
     flex-direction: column;
