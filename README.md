@@ -58,3 +58,8 @@ Johan:
 https://www.linkedin.com/in/johanhuijkman/?isSelfProfile=false
 https://blog.q42.nl/author/johan/
 https://webdevcon.nl/speaker/johan-huijkman/
+
+Hans de Zwart:
+https://research.hva.nl/en/persons/hans-de-zwart/
+https://thenextspeaker.com/experts/hans-de-zwart/
+https://blog.hansdezwart.nl/bio-nl/
