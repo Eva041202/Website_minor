@@ -63,3 +63,6 @@ Hans de Zwart:
 https://research.hva.nl/en/persons/hans-de-zwart/
 https://thenextspeaker.com/experts/hans-de-zwart/
 https://blog.hansdezwart.nl/bio-nl/
+
+Q42:
+https://www.q42.nl/
