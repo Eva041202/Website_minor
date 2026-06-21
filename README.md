@@ -66,3 +66,7 @@ https://blog.hansdezwart.nl/bio-nl/
 
 Q42:
 https://www.q42.nl/
+
+De Voorhoede:
+https://www.voorhoede.nl/nl/
+https://www.linkedin.com/company/de-voorhoede/?originalSubdomain=nl
