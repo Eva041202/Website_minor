@@ -70,3 +70,8 @@ https://www.q42.nl/
 De Voorhoede:
 https://www.voorhoede.nl/nl/
 https://www.linkedin.com/company/de-voorhoede/?originalSubdomain=nl
+
+Marleen Stikker:
+https://waag.org/nl/marleen-stikker/
+https://nl.wikipedia.org/wiki/Marleen_Stikker
+https://www.awti.nl/personen/raadsleden/marleen-stikker
