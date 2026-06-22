@@ -75,3 +75,34 @@ Marleen Stikker:
 https://waag.org/nl/marleen-stikker/
 https://nl.wikipedia.org/wiki/Marleen_Stikker
 https://www.awti.nl/personen/raadsleden/marleen-stikker
+
+# Overzicht pagina's:
+## My Coding Journey
+Dit is de home-page. Hier kan je vinden:
+- Wat ik heb geleerd
+- Weekly Geek
+- Weekly Nerd
+- Projecten
+- The web you want
+- Meesterproef
+
+## Wat ik heb geleerd
+Hier staat mijn reflectie beschreven, doelen en behaalde doelen.
+
+## Weekly Geek
+Hier staan de artikelen van de Weekly Geeks die we toen der tijd hebben gekregen
+
+## Weekly Nerd
+Hier staan alle gastsprekers die we hebben gehad.
+Ik heb mijn aantekeningen, informatie over de spreker en wat ik hier zelf uit meeneem staan.
+
+## Projecten
+Hier staan alle projecten van de minor die ik heb gemaakt.
+Onder Sprint 0 en de Hackaton staat nog mijn code, omdat dit 2 van de 3 gesprekken waren.
+
+## The web you want
+Bij dag 1 heb ik informatie geschreven over Marleen Stikker.
+Bij dag 2 staan mijn aantekeningen tijdens de lezing en wat ik die middag heb gedaan.
+
+## Meesterproef
+Hier staat wat we gedaan hebben voor de meesterproef, wat ik zelf per dag heb gedaan en de gesprekken die we met de coach en opdrachtgevers hebben gehad
